@@ -1,0 +1,40 @@
+apt show ubuntu-advantage-tools
+
+sudo apt update && sudo apt install ubuntu-advantage-tools
+
+sudo pro enable realtime-kernel
+
+uname -a // somente para verificar se está rt ou nao
+
+sudo pro disable realtime-kernel
+
+sudo cyclictest -t1 -p80 -i1000 -l100000 -h 100 --histfile=/home/throd/Documents/histograma.txt
+
+
+gerando o gráfico:
+
+gnuplot -persist -e "set title 'Distribuição de Latências'; \
+set xlabel 'Latência (us)'; \
+set ylabel 'Ocorrências'; \
+set grid; \
+plot '/home/throd/Documents/histograma.txt' using 1:2 with lines title 'Thread 0'"
+
+
+stress --cpu 32 --timeout 180s
+
+
+grep "^[0-9]" /home/throd/Documents/histograma_dynamic.txt > histo.dat
+echo "143 93" >> histo.dat
+
+## ---------------- para rodar o codigo em c
+
+comando para ver cpu: 
+	top
+
+comando para rodar o programa em c:
+	sudo ./TP_rt
+
+python:
+source venv/bin/activate
+python scripts/analyze_times.py
+python3 scripts/generate_plots.py
