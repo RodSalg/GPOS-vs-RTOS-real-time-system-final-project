@@ -1,8 +1,8 @@
 # Real-Time Control System Comparison: RT vs GPOS
 
 ## Authors
-- Thiago Rodrigo Monteiro Salgado - Graduate Student, PPGEE/UFAM
 - Aris Canto - Graduate Student, PPGEE/UFAM
+- Thiago Rodrigo Monteiro Salgado - Graduate Student, PPGEE/UFAM
 
 Advisor: Prof. Dr. Lucas Cordeiro  
 Institution: Federal University of Amazonas (UFAM)  
