@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        ".als.json": "jsonc",
+        "string.h": "c",
+        "utils.h": "c"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/gaspar/Área de trabalho/TP03",
+            "binaryPath": "/home/gaspar/Área de trabalho/TP03/TP03",
+            "binaryArgs": []
+        }
+    ]
+}

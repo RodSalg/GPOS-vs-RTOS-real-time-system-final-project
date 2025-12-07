@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "string.h": "c"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/gaspar/Área de trabalho/TP03",
+            "binaryPath": "/home/gaspar/Área de trabalho/TP03/TP03",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/gaspar/Downloads/TP03",
+            "binaryPath": "/home/gaspar/Downloads/TP03/TP03_rt",
+            "binaryArgs": []
+        }
+    ]
+}
