@@ -50,19 +50,19 @@ Understanding when you need an RTOS vs when GPOS is sufficient can save signific
 ## Repository Structure
 
 .
-├── src/
-│   ├── main.c              # Main program entry point
-│   ├── robot.c             # Robot kinematics simulation (30ms thread)
-│   ├── control.c           # Control and linearization threads (40-50ms)
-│   ├── reference.c         # Reference generation and model (50-120ms)
-│   ├── shared.c            # Shared data structure and mutex
-│   └── utils.c             # Logging and UI thread (100ms)
-├── include/                # Header files
-├── scripts/
-│   ├── analyze_times.py    # Statistical analysis of execution times
-│   └── generate_plots.py   # Visualization generation
-├── data/                   # Output directory for logs and CSV
-└── README.md
+- **src/** - Source code files
+  - `main.c` - Main program entry point
+  - `robot.c` - Robot kinematics simulation (30ms thread)
+  - `control.c` - Control and linearization threads (40-50ms)
+  - `reference.c` - Reference generation and model (50-120ms)
+  - `shared.c` - Shared data structure and mutex
+  - `utils.c` - Logging and UI thread (100ms)
+- **include/** - Header files
+- **scripts/** - Analysis tools
+  - `analyze_times.py` - Statistical analysis of execution times
+  - `generate_plots.py` - Visualization generation
+- **data/** - Output directory for logs and CSV
+- `README.md` - This file
 
 ---
 
